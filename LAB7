@@ -1,4 +1,3 @@
-
 public class mySeventhApp {
     public static void main(String[] args) {
         Person person1 = new Person("Alice", 25, "Krakow", 1999);
@@ -14,6 +13,9 @@ public class mySeventhApp {
         person1.showInfo();
     }
 }
+
+
+
 public class Person {
     String name;
     int age;
