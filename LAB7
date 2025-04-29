@@ -1,1 +1,48 @@
 
+public class mySeventhApp {
+    public static void main(String[] args) {
+        Person person1 = new Person("Alice", 25, "Krakow", 1999);
+        person1.sayHello();
+        person1.showInfo();
+
+        System.out.println("\nGetting older...");
+        person1.growOld(10);
+        person1.showInfo();
+
+        System.out.println("\nGetting younger...");
+        person1.beYounger();
+        person1.showInfo();
+    }
+}
+public class Person {
+    String name;
+    int age;
+    String address;
+    int year_of_birth;
+
+    public Person(String name, int age, String address, int year_of_birth) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.year_of_birth = year_of_birth;
+    }
+
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name + ".");
+    }
+
+    public void growOld(int years) {
+        age += years;
+    }
+
+    public void beYounger() {
+        age -= 1;
+    }
+
+    public void showInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+        System.out.println("Year of Birth: " + year_of_birth);
+    }
+}
